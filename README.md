@@ -28,3 +28,19 @@ The following commands are available:
 csshx --screen # FRA
 cssh FRA
 ```
+
+If you run into this problem when connecting to a large POP.
+```
+forkpty: Device not configured
+Could not create a new process and open a pseudo-tty.
+```
+
+You can resolve this by adding the following to `/etc/sysctl.conf`
+```
+kern.tty.ptmx_max=255
+```
+
+This file may not exist; if you have to create it, you should probably be sure it has restricted ownership and permissions:
+
+sudo chown root:wheel /etc/sysctl.conf
+sudo chmod 644 /etc/sysctl.conf
