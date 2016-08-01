@@ -5,8 +5,15 @@ This script parses your `~/.ssh/known_hosts.fastly` file to make a list of all t
 ## Dependencies
 
  * Updated **known_hosts.fastly** file
+ * CSSHX 
 
 ## Installation
+
+Installing CSSHX
+```
+git clone git@github.com:brockgr/csshx.git
+cd csshx and move csshX to /usr/local/bin
+```
 
 Update the ** known_hosts.fastly** file by running the following command, this will ensure you have the latest nodes.
 ```
