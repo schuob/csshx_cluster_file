@@ -8,7 +8,7 @@ pops=$(echo "$caches" | sed -E 's/cache-([^0-9]*).*$/\1/' | uniq)
 for pop in $pops; do 
   hosts=$(echo "$caches" | grep ^cache-$pop | cut -d '.' -f1) 
   POP=$(echo $pop | tr [:lower:] [:upper:])
-  echo $POP = $hosts >> /etc/clusters
+  echo $POP $hosts >> /etc/clusters
 done
 
 exit 0
