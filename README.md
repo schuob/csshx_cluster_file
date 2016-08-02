@@ -1,6 +1,6 @@
 # CSSHX Clusters
 
-This script parses your `~/.ssh/known_hosts.fastly` file to make a list of all the cache-nodes and group them up based by POP and Region.
+This script parses your `~/.ssh/known_hosts.fastly` file to make a list of all the cache-nodes and group them up based by POP and Region. Any suggestion or problems please slack me or open an issue on github.
 
 ## Dependencies
 
