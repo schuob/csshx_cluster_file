@@ -33,7 +33,7 @@ The following commands are available:
 
 ```
 csshx --screen # FRA
-cssh FRA
+csshx FRA
 ```
 
 If you run into this problem when connecting to a large POP.
